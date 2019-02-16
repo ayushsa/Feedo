@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#d81b60</color>
+    <color name="colorPrimaryDark">#c2185b</color>
+    <color name="colorAccent">#ec407a</color>
+
+    <color name="splash_background">#f06292</color>
+
+    <color name="black_overlay">#66000000</color>
+
+    <color name="colorPrimaryLight">#a29cb7</color>
+
+    <color name="black">#000</color>
+    <color name="white">#ffffff</color>
+    <color name="gray">#ffe1e1e1</color>
+
+    <color name="gplus_default">#DF4A32</color>
+    <color name="facebook_default">#183C94</color>
+    <color name="twitter_default">#299FD3</color>
+    <color name="gplus_clicked">#90DF4A32</color>
+    <color name="facebook_clicked">#90183C94</color>
+    <color name="twitter_clicked">#90299FD3</color>
+    <color name="yellow">#ffff7561</color>
+    <color name="red">#ffff1900</color>
+    <color name="green">#ffffc236</color>
+    <color name="app_color">#8E0305</color>
+    <color name="app_color_dark">#ff710400</color>
+    <color name="blue">#ff4c76b5</color>
+    <color name="transparent">#00000000</color>
+    <color name="orange">#CE7C01</color>
+    <color name="text_color">#555555</color>
+    <color name="dark_gray">#575757</color>
+    <color name="dark_gray_alpha">#40000000</color>
+    <color name="light_grey">#ffcdcdcd</color>
+    <color name="translucent_grey">#50cdcdcd</color>
+
+    <color name="colorBackground">#413e4f</color>
+    <color name="colorText">#FFFFFF</color>
+    <color name="colorTextHint">#51d8c7</color>
+
+    <color name="dark_red">#cc1035</color>
+    <color name="Green">#4cb74c</color>
+
+
+
+    <color name="light_white">#f7f6f6</color>
+
+
+    <color name="tile0">#ffe74c3c</color>
+    <color name="tile1">#ff7a7a7a</color>
+    <color name="tile2">#ffc0392b</color>
+    <color name="tile3">#ffe67e22</color>
+    <color name="tile4">#ffd35400</color>
+    <color name="tile5">#ffffcd02</color>
+    <color name="tile6">#ffffa800</color>
+    <color name="tile7">#ffa3a76e</color>
+    <color name="tile8">#fff9b590</color>
+    <color name="tile9">#ffa4936e</color>
+    <color name="tile10">#ff647b53</color>
+    <color name="tile11">#ffffb339</color>
+    <color name="tile12">#ffff9f4b</color>
+    <color name="tile13">#fff46556</color>
+    <color name="tile14">#ff66ad84</color>
+    <color name="tile15">#ff27ae60</color>
+
+    <color name="tiles">#4DD0E1FF</color>
+
+
+    <color name="light_gray">#D3D3D3</color>
+    <color name="material_red" >#b71c1c</color>
+
+
+    <color name="tpi_checked">#FFFFFFFF</color>
+    <color name="tpi_unchecked">#99FFFFFF</color>
+
+    <color name="et_divider_focused">@color/colorControlActivated</color>
+    <color name="et_divider_not_focused">#FF6D6D6D</color>
+    <color name="et_divider_disable">#FFC1C1C1</color>
+
+
+    <color name="colorControlNormal">#FF78909C</color>
+    <color name="colorControlActivated">#FF03A9F4</color>
+    <color name="colorSwitchThumbNormal">#FF78909C</color>
+
+
+</resources>

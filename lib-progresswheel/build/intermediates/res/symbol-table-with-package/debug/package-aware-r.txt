@@ -1,0 +1,22 @@
+com.trend.progress
+attr matProg_barColor
+attr matProg_barSpinCycleTime
+attr matProg_barWidth
+attr matProg_circleRadius
+attr matProg_fillRadius
+attr matProg_linearProgress
+attr matProg_progressIndeterminate
+attr matProg_rimColor
+attr matProg_rimWidth
+attr matProg_spinSpeed
+color translucent_black
+id progress_wheel
+id rlParent
+id tvText
+layout lprogress
+string app_name
+string default_progressbar
+style CustomDialog
+style CustomDialogTranslucent
+style MyCustomDialog
+styleable ProgressWheel matProg_barColor matProg_barSpinCycleTime matProg_barWidth matProg_circleRadius matProg_fillRadius matProg_linearProgress matProg_progressIndeterminate matProg_rimColor matProg_rimWidth matProg_spinSpeed

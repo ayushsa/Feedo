@@ -1,0 +1,15 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="margininulb">20dp</dimen>
+    <dimen name="margin_between_card_elements">5dp</dimen>
+    <dimen name="margin_left_card_elements">20dp</dimen>
+    <dimen name="margin_right_card_elements">7dp</dimen>
+    <dimen name="cardview_elements_width">150dp</dimen>
+
+    <dimen name="demo">130dp</dimen>
+    <dimen name="radius_corner">10dp</dimen>
+    <dimen name="button_radius_large">5dp</dimen>
+</resources>

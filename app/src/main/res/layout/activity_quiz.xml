@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/ivBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/logo"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/splash_background" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@color/translucent_black"
+        android:contentDescription="@string/overlay" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rlQuestionNumber"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvQuestionCounter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="20dp"
+                    android:text=""
+                    android:textColor="@color/white" />
+
+            </RelativeLayout>
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_above="@+id/rlButtons"
+                android:layout_below="@+id/rlQuestionNumber">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:id="@+id/tvQuestion"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/tvAnswer1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_answer"
+                            android:clickable="true"
+                            android:onClick="invokeAnswerClicked"
+                            android:padding="10dp"
+                            android:tag="1"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:visibility="gone"
+                            android:layout_marginEnd="10dp"
+                            android:focusable="true" />
+
+                        <TextView
+                            android:id="@+id/tvAnswer2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_answer"
+                            android:clickable="true"
+                            android:onClick="invokeAnswerClicked"
+                            android:padding="10dp"
+                            android:tag="2"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:visibility="gone"
+                            android:layout_marginStart="10dp"
+                            android:focusable="true" />
+
+
+                        <ImageButton
+                            android:id="@+id/ibAnswer1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_answer"
+                            android:clickable="true"
+                            android:onClick="invokeAnswerClicked"
+                            android:padding="5dp"
+                            android:scaleType="fitCenter"
+                            android:tag="1"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:contentDescription="@string/answer_1"
+                            android:layout_marginEnd="10dp"
+                            android:focusable="true" />
+
+                        <ImageButton
+                            android:id="@+id/ibAnswer2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_answer"
+                            android:clickable="true"
+                            android:onClick="invokeAnswerClicked"
+                            android:padding="5dp"
+                            android:scaleType="fitCenter"
+                            android:tag="2"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:contentDescription="@string/answer_2"
+                            android:layout_marginStart="10dp"
+                            android:focusable="true" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tvAnswer3"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/btn_answer"
+                                android:clickable="true"
+                                android:onClick="invokeAnswerClicked"
+                                android:padding="10dp"
+                                android:tag="3"
+                                android:text=""
+                                android:textColor="@color/white"
+                                android:textSize="16sp"
+                                android:visibility="gone"
+                                android:layout_marginEnd="10dp"
+                                android:focusable="true" />
+
+                            <TextView
+                                android:id="@+id/tvAnswer4"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/btn_answer"
+                                android:clickable="true"
+                                android:onClick="invokeAnswerClicked"
+                                android:padding="10dp"
+                                android:tag="4"
+                                android:text=""
+                                android:textColor="@color/white"
+                                android:textSize="16sp"
+                                android:visibility="gone"
+                                android:layout_marginStart="10dp"
+                                android:focusable="true" />
+
+
+                            <ImageButton
+                                android:id="@+id/ibAnswer3"
+                                android:layout_width="fill_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/btn_answer"
+                                android:clickable="true"
+                                android:onClick="invokeAnswerClicked"
+                                android:padding="5dp"
+                                android:scaleType="fitCenter"
+                                android:tag="3"
+                                android:focusable="true"
+                                android:contentDescription="@string/answer_3"
+                                android:layout_marginEnd="10dp" />
+
+                            <ImageButton
+                                android:id="@+id/ibAnswer4"
+                                android:layout_width="fill_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/btn_answer"
+                                android:clickable="true"
+                                android:onClick="invokeAnswerClicked"
+                                android:padding="5dp"
+                                android:scaleType="fitCenter"
+                                android:tag="4"
+                                android:focusable="true"
+                                android:contentDescription="@string/answer_4"
+                                android:layout_marginStart="10dp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+            <RelativeLayout
+                android:id="@+id/rlButtons"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="5dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <Button
+                    android:id="@+id/bPrevious"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:background="@drawable/button_background"
+                    android:onClick="invokePrevious"
+                    android:text="@string/previous"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/bNext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/button_background"
+                    android:onClick="invokeNext"
+                    android:text="@string/next"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:layout_alignParentEnd="true" />
+
+                <Button
+                    android:id="@+id/btSubmitQuiz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/button_background"
+                    android:onClick="invokesubmitQuiz"
+                    android:padding="5dp"
+                    android:text="@string/submit"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlStartIn"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#d0000000"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvStartIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+            <Button
+                android:id="@+id/bRestartQuiz"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_below="@+id/tvStartIn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:onClick="invokeRestartQuiz"
+                android:text="@string/restart_quiz"
+                android:textAllCaps="false"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</FrameLayout>
